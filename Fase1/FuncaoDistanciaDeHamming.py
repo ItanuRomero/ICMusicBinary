@@ -8,6 +8,8 @@ def xor(a, b):
     c = (a ^ b)
     count_zero = 0
     print(bin(c))
+    if c == 0:
+        count_zero = len(bin(c))
     while c != 0:
         if c % 2 == 0:
             count_zero += 1
@@ -16,7 +18,7 @@ def xor(a, b):
     print(bin(c))
 
 
-xor(13, 1)
+xor(5, 5)
 
 
 """
