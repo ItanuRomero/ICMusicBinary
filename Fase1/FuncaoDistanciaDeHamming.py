@@ -7,14 +7,16 @@ return np.count_nonzero( (a & r) != (b & r) )
 def xor(a, b):
     c = (a ^ b)
     count_zero = 0
+    print(bin(c))
     while c != 0:
         if c % 2 == 0:
             count_zero += 1
         c = c >> 1
     print(count_zero)
+    print(bin(c))
 
 
-xor(10, 10)
+xor(13, 1)
 
 
 """
