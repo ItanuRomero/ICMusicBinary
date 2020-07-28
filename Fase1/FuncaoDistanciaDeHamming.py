@@ -10,11 +10,11 @@ def xor(a, b):
     while c != 0:
         if c % 2 == 0:
             count_zero += 1
-        c //= 2
+        c = c >> 1
     print(count_zero)
-    
-        
-xor(10, 4)
+
+
+xor(10, 10)
 
 
 """
