@@ -6,7 +6,7 @@ return np.count_nonzero( (a & r) != (b & r) )
 
 from sys import getsizeof
 
-
+# iterar acima desta:
 def xor(a, b):
     print(getsizeof(a))
     c = (a ^ b)
