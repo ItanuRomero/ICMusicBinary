@@ -4,12 +4,16 @@ def hamming_distance(a, b):
 r = (1 << np.arange(8))[:,None]
 return np.count_nonzero( (a & r) != (b & r) )
 
+from sys import getsizeof
+
+
 def xor(a, b):
+    print(getsizeof(a))
     c = (a ^ b)
     count_zero = 0
     print(bin(c))
     if c == 0:
-        count_zero = len(bin(c))
+        print(getsizeof(c))
     while c != 0:
         if c % 2 == 0:
             count_zero += 1
