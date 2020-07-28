@@ -11,6 +11,7 @@ def xor(a, b):
         if c % 2 == 0:
             count_zero += 1
         c //= 2
+    print(count_zero)
     
         
 xor(10, 4)
