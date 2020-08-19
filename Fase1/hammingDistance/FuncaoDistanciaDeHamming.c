@@ -5,6 +5,7 @@ int main()
 {
     open_file();
     printf("\ntudo certo.");
+    analyse_file();
     return 0;
 }
 
