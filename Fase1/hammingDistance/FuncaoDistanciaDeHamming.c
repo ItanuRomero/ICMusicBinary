@@ -4,7 +4,7 @@
 int main()
 {
     open_file();
-    printf("\ntudo certo.");
+    printf("tudo certo.\n");
     analyse_file();
     return 0;
 }
@@ -40,48 +40,39 @@ void analyse_file(){
         FILE *arq;
         FILE *arq2;
         int xor, count_zero = 0;
-        int stop = 0;
+        int buffer[100];
+        int result;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
 
-            while  ( ( bit = fgetc( arq ) ) != EOF )
-            {
-                while ( ( bit_2 = fgetc( arq2 ) ) != EOF )
+            bit = fread( &buffer, 10, 1, arq );
+            bit_2 = fread( &buffer, 10, 1, arq2 );
+
+                if ( bit == NULL || bit_2 == NULL )
                 {
-                    //verifica se o valor eh nulo, caso correto, desconsidera essa volta
-                    if ( bit == NULL || bit_2 == NULL )
-                    {
-                        printf("valor nulo!\n");
-                        stop = (stop - 1);
-                        break;
-                    }
-                    printf("%c", bit);
-                    printf("%c", bit_2);
-
-                    //faz a operacao ou exclusivo
-                    xor = (bit ^ bit_2);
-
-                    if ( xor == 0 )
-                    {
-                        //caso o resultado for zero, ele aumenta 1 no contador
-                        printf("xor igual a 0.\n");
-                        count_zero = (count_zero + 1);
-                    } else
-                    {
-                        if ( xor == 1 )
-                        {
-                            printf("xor igual a 1.\n");
-                        }
-                    }
-                    break;
+                    printf("valor nulo!\n");
                 }
-                stop = (stop + 1);
-                if (stop == 10)
-                {
-                    break;
-                }
+                printf("valor de bit: %d\n", bit);
+                printf("valor de bit2: %d\n", bit_2);
+                result = hammingDistance(bit, bit_2); // esta dando core dumped
+                printf('%d', result);
 
-            }
             printf("O numero de zeros: %d", count_zero);
+    fclose(arq);
+    fclose(arq2);
+}
+
+int hammingDistance(int n1, int n2)
+{
+    int x = n1 ^ n2;
+    int setBits = 0;
+
+    while (x > 0) {
+        setBits += x & 1;
+        x >>= 1;
+        printf("%d", setBits);
+    }
+
+    return setBits;
 }
