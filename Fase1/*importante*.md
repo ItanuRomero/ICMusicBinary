@@ -12,3 +12,6 @@
 **Definicao de base de dados a serem testados**
 
 - [x] Finalizar.
+
+# verificar:
+**ecasound - para analizar espectros**
