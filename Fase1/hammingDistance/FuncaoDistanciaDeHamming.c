@@ -39,15 +39,14 @@ void analyse_file(){
         int bit, bit_2;
         FILE *arq;
         FILE *arq2;
-        int xor, count_zero = 0;
-        int buffer[100];
+        int count_zero = 0;
         int result;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
 
-            bit = fread( &buffer, sizeof(int), 1, arq );
-            bit_2 = fread( &buffer, sizeof(int), 1, arq2 );
+            fread( bit, sizeof(int), 32, arq );
+            fread( bit_2, sizeof(int), 32, arq2 );
 
                 if ( bit == NULL || bit_2 == NULL )
                 {
@@ -55,7 +54,7 @@ void analyse_file(){
                 }
                 printf("valor de bit: %d\n", bit);
                 printf("valor de bit2: %d\n", bit_2);
-                result = hammingDistance(bit, bit_2); // esta dando core dumped
+                result = hammingDistance(bit, bit_2);
                 printf("resultado: %d\n", result);
 
             printf("O numero de zeros: %d", count_zero);
