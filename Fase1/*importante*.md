@@ -1,12 +1,18 @@
 # 1
 **Levantamento bibliografico e pesquisa sobre o estado da arte e representacao de audio de forma digital**
 
-- [ ] Finalizar.
+- [x] Finalizar.
+-> Por enquanto utilizaremos:
+[artigo 1]()
+[artigo 2]()
 
 # 2
 **Levantamento bibliografico e pesquisa sobre o estado da arte sobre funcoes de similaridade relacionadas com o problema proposto**
 
-- [ ] Finalizar.
+- [x] Finalizar.
+-> Por enquanto utilizaremos:
+[artigo 1]()
+[artigo 2]()
 
 # 3
 **Definicao de base de dados a serem testados**
