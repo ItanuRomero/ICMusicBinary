@@ -5,3 +5,8 @@ Wave - compressao minima possivel, possui uma maior qualidade de audio e informa
 Comprimidos (mp3, entre outros.) - com a finalidade de reduzir o espaco utilizado, os arquivos acima sao comprimidos mais ainda a partir de diversos modos, sendo o mais comum o mp3, o qual retira todo tipo de  variacao de som imperceptivel aos seres humanos, perdendo um pouco de qualidade e se afastando do arquivo original, porem mantendo o mesmo som para nos e diminuindo drasticamente o espaco.
 
 Essas diferencas sao minimas para a maioria dos usuarios.
+
+**No arquivo FormatoDeArquivosDeAudioNaInternet.pdf** podemos encontrar tais diferenças, baseado em seu objetivo, página 5.
+
+**Para entender mais de pulse code modulation check:**
+AnaliseDosFormatosSubjetivamente.pdf, figura 6, página 21.
