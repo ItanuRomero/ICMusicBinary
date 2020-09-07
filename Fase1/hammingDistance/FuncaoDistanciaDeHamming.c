@@ -36,7 +36,7 @@ void open_file(){
 }
 
 void analyse_file(){
-        int bit, bit_2;
+        int bit[100], bit_2[100];
         FILE *arq;
         FILE *arq2;
         int count_zero = 0;
@@ -45,8 +45,8 @@ void analyse_file(){
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
 
-            fread( bit, sizeof(int), 32, arq );
-            fread( bit_2, sizeof(int), 32, arq2 );
+            fread( bit, sizeof(int), 100, arq );
+            fread( bit_2, sizeof(int), 100, arq2 ); //dessa forma esta correto
 
                 if ( bit == NULL || bit_2 == NULL )
                 {
