@@ -10,3 +10,5 @@ Essas diferencas sao minimas para a maioria dos usuarios.
 
 **Para entender mais de pulse code modulation check:**
 AnaliseDosFormatosSubjetivamente.pdf, figura 6, página 21.
+
+[**video**](https://www.youtube.com/watch?v=1EdL0eu6oGE)
