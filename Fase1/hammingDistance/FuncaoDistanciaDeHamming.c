@@ -40,24 +40,33 @@ void analyse_file(){
         FILE *arq;
         FILE *arq2;
         int count_zero = 0;
-        int result;
+        int result, contador = 1;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
 
             fread( bit, sizeof(int), 100, arq );
             fread( bit_2, sizeof(int), 100, arq2 ); //dessa forma esta correto
+                while (contador <= 100) {
 
-                if ( bit == NULL || bit_2 == NULL )
-                {
-                    printf("valor nulo!\n");
+                    if ( bit[contador] == NULL || bit_2[contador] == NULL )
+                    {
+                        printf("valor nulo!\n");
+                    }
+                    printf("valor de bit: %d\n", bit[contador]);
+                    printf("valor de bit2: %d\n", bit_2[contador]);
+                    result = hammingDistance(bit[contador], bit_2[contador]);
+                    printf("resultado: %d\n", result);
+
+                        if (result == 0)
+                        {
+                            count_zero = count_zero + 1;
+                        }
+                    contador = contador + 1;
                 }
-                printf("valor de bit: %d\n", bit);
-                printf("valor de bit2: %d\n", bit_2);
-                result = hammingDistance(bit, bit_2);
-                printf("resultado: %d\n", result);
 
             printf("O numero de zeros: %d", count_zero);
+
     fclose(arq);
     fclose(arq2);
 }
