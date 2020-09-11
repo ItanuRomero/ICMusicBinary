@@ -46,7 +46,7 @@ void analyse_file(){
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
 
             fread( bit, sizeof(int), 100, arq );
-            fread( bit_2, sizeof(int), 100, arq2 ); //dessa forma esta correto
+            fread( bit_2, sizeof(int), 100, arq2 );
                 while (contador <= 100) {
 
                     if ( bit[contador] == NULL || bit_2[contador] == NULL )
