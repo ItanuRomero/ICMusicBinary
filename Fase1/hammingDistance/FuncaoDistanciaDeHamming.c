@@ -40,7 +40,7 @@ void analyse_file(){
         FILE *arq;
         FILE *arq2;
         int count_zero = 0;
-        int result, contador = 1;
+        int result, contador = 0;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
