@@ -3,36 +3,8 @@
 
 int main()
 {
-    open_file();
-    printf("tudo certo.\n");
     analyse_file();
     return 0;
-}
-
-void open_file(){
-    FILE *arq;
-    FILE *arq2;
-    int result;
-    char Str[50];
-
-    arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
-    arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
-
-
-    if (arq == NULL)
-    {
-        printf("Problemas na abertura do arquivo\n");
-        return;
-    }
-    if (arq2 == NULL)
-    {
-        printf("Problemas na abertura do arquivo 2\n");
-        return;
-    }
-
-
-    fclose(arq);
-    fclose(arq2);
 }
 
 void analyse_file(){
@@ -44,6 +16,16 @@ void analyse_file(){
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
+            if (arq == NULL)
+            {
+                printf("Problemas na abertura do arquivo\n");
+                return;
+            }
+            if (arq2 == NULL)
+            {
+                printf("Problemas na abertura do arquivo 2\n");
+                return;
+            }
 
             fread( bit, sizeof(int), 100, arq );
             fread( bit_2, sizeof(int), 100, arq2 );
@@ -82,5 +64,5 @@ int hammingDistance(int n1, int n2)
         printf("%d", setBits);
     }
 
-    return setBits;
+    return setBits; // numero bits DIFERENTES
 }
