@@ -40,14 +40,13 @@ void analyse_file(){
                     result = hammingDistance(bit[contador], bit_2[contador]);
                     printf("resultado: %d\n", result);
 
-                        if (result == 0)
-                        {
-                            count_zero = count_zero + 1;
-                        }
+                    printf("-Result = %d-\n", result);
+
+                    printf("Sim Hamming = %f", (32 - result)/32);
+
                     contador = contador + 1;
                 }
 
-            printf("O numero de zeros: %d", count_zero);
 
     fclose(arq);
     fclose(arq2);
@@ -64,5 +63,5 @@ int hammingDistance(int n1, int n2)
         printf("%d", setBits);
     }
 
-    return setBits; // numero bits DIFERENTES
+    return setBits; // numero bits DIFERENTES na amostra
 }
