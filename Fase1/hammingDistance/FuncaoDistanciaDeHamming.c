@@ -13,6 +13,7 @@ void analyse_file(){
         FILE *arq2;
         int count_zero = 0;
         int result, contador = 0;
+        float similaridade;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
         arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
@@ -38,11 +39,12 @@ void analyse_file(){
                     printf("valor de bit: %d\n", bit[contador]);
                     printf("valor de bit2: %d\n", bit_2[contador]);
                     result = hammingDistance(bit[contador], bit_2[contador]);
-                    printf("resultado: %d\n", result);
 
                     printf("-Result = %d-\n", result);
 
-                    printf("Sim Hamming = %f", (32 - result)/32);
+                    similaridade = (100 * result) / 32;
+
+                    printf("Sim Hamming = %f%%\n", similaridade);
 
                     contador = contador + 1;
                 }
@@ -60,7 +62,6 @@ int hammingDistance(int n1, int n2)
     while (x > 0) {
         setBits += x & 1;
         x >>= 1;
-        printf("%d", setBits);
     }
 
     return setBits; // numero bits DIFERENTES na amostra
