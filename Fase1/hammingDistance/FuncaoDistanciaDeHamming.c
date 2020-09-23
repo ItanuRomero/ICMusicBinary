@@ -12,7 +12,7 @@ void analyse_file(){
         FILE *arq;
         FILE *arq2;
         int count_zero = 0;
-        int result, contador = 0;
+        int result, contador = 0, i = 0;
         float similaridade;
 
         arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
@@ -28,27 +28,31 @@ void analyse_file(){
                 return;
             }
 
-            fread( bit, sizeof(int), 100, arq );
-            fread( bit_2, sizeof(int), 100, arq2 );
-                while (contador <= 100) {
+            while (!feof(arq)) {
 
-                    if ( bit[contador] == NULL || bit_2[contador] == NULL )
-                    {
-                        printf("valor nulo!\n");
+                fread( bit, sizeof(int), 100, arq );
+                fread( bit_2, sizeof(int), 100, arq2 );
+                    while (contador <= 100) {
+
+                        if ( bit[contador] == NULL || bit_2[contador] == NULL )
+                        {
+                            printf("valor nulo!\n");
+                        }
+                        printf("valor de bit: %d\n", bit[contador]);
+                        printf("valor de bit2: %d\n", bit_2[contador]);
+                        result = hammingDistance(bit[contador], bit_2[contador]);
+
+                        printf("-Result = %d-\n", result);
+
+                        similaridade = (100 * result) / 32;
+
+                        printf("Sim Hamming = %f%%\n", similaridade);
+
+                        contador = contador + 1;
                     }
-                    printf("valor de bit: %d\n", bit[contador]);
-                    printf("valor de bit2: %d\n", bit_2[contador]);
-                    result = hammingDistance(bit[contador], bit_2[contador]);
-
-                    printf("-Result = %d-\n", result);
-
-                    similaridade = (100 * result) / 32;
-
-                    printf("Sim Hamming = %f%%\n", similaridade);
-
-                    contador = contador + 1;
+                i++;
+                printf("\n%d\n", i);
                 }
-
 
     fclose(arq);
     fclose(arq2);
