@@ -1,22 +1,15 @@
 #include <stdio.h>
 
-
-int main()
-{
-    analyse_file();
-    return 0;
-}
-
 void analyse_file(){
-        int bit[100], bit_2[100], percentage[1000];
+        int bit[100], bit_2[100];
         FILE *arq;
         FILE *arq2;
         int result, contador = 0, i = 0;
         float similaridade;
 
         // Faz leitura dos arquivos
-        arq = fopen("./D.B._Ricapito_-_So_Crazy.mp3", "rb");
-        arq2 = fopen("./The_Devil_Music_Co._-_Head_Over_Heels.mp3", "rb");
+        arq = fopen("./testes/Documento1.txt", "rb");
+        arq2 = fopen("./testes/Documento2.txt", "rb");
 
             // Verifica se houve erro na leitura
             if (readingFileError(arq, arq2) == 1) {
@@ -25,7 +18,7 @@ void analyse_file(){
             };
 
             // Enquanto os arquivos ainda tem dados a serem lidos
-            while (!feof(arq) || !feof(arq2)) {
+            while (!feof(arq) && !feof(arq2)) {
 
                 fread( bit, sizeof(int), 100, arq );
                 fread( bit_2, sizeof(int), 100, arq2 );
@@ -33,20 +26,22 @@ void analyse_file(){
                     // Vai correr pelos valores de 0 a 100 dos vetores bit e bit_2
                     while (contador <= 100) {
 
-                        if ( bit[contador] == NULL || bit_2[contador] == NULL )
+                        if ( bit[contador] == EOF || bit_2[contador] == EOF )
                         {
-                            printf("valor nulo!\n");
+                            printf("Terminou o arquivo!\n");
+                        } else
+                        {
+                            printf("valor de bit: %d\n", bit[contador]);
+                            printf("valor de bit2: %d\n", bit_2[contador]);
+
+                            result = hammingDistance(bit[contador], bit_2[contador]);
+                            printf("-Result = %d-\n", result);
+
+                            similaridade = (100 * result) / 32;
+                            printf("Sim Hamming = %f%%\n", similaridade);
+
+                            contador = contador + 1;
                         }
-                        printf("valor de bit: %d\n", bit[contador]);
-                        printf("valor de bit2: %d\n", bit_2[contador]);
-
-                        result = hammingDistance(bit[contador], bit_2[contador]);
-                        printf("-Result = %d-\n", result);
-
-                        similaridade = (100 * result) / 32;
-                        printf("Sim Hamming = %f%%\n", similaridade);
-
-                        contador = contador + 1;
                     }
 
                 //retorna contador para 0 para que o while possa contar novamente
@@ -87,4 +82,10 @@ int readingFileError(FILE *arch1, FILE *arch2)
         retornar = 0;
     }
     return retornar;
+}
+
+int main()
+{
+    analyse_file();
+    return 0;
 }
