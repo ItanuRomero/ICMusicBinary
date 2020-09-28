@@ -1,34 +1,34 @@
-#include <stdio.h>
+#include "hammingFunctions.h"
 
-#define BLOCO 20
-
-void analyse_file(){
-        int bit[BLOCO], bit_2[BLOCO], percentage[1000], tst1, tst2;
+// Realiaza a analise
+void analyse_file()
+{
+        int bit[BLOCO], bit_2[BLOCO], percentage[1000], teste1, teste2;
         FILE *arq;
         FILE *arq2;
         int result, contador = 0, i = 0;
         float similaridade;
 
         // Faz leitura dos arquivos
-        arq = fopen("./texto01.txt", "rb");
-        arq2 = fopen("./texto02.txt", "rb");
+        arq = fopen("./testes/Documento1.txt", "rb");
+        arq2 = fopen("./testes/Documento2.txt", "rb");
 
             // Verifica se houve erro na leitura
             if (readingFileError(arq, arq2) == 1) {
                 printf("\nDetectamos um erro ao abrir os arquivos!!\nfavor verificar e tentar novamente\n\n");
                 return;
             };
-            
-            tst1 = fread( bit, sizeof(int), BLOCO, arq );
-            tst2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
-            
+
+            teste1 = fread( bit, sizeof(int), BLOCO, arq );
+            teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
+
             printf("\n\n%d %d\n\n", tst1, tst2);
-            
-            
+
+
 
             // Enquanto os arquivos ainda tem dados a serem lidos
             while (tst1 == BLOCO && tst2 == BLOCO) {
-            	
+
             	    // Vai correr pelos valores de 0 a 100 dos vetores bit e bit_2
                     while (contador <= BLOCO) {
 
@@ -36,7 +36,7 @@ void analyse_file(){
                         {
                             printf("valor nulo!\n");
                         }*/
-                        
+
                         printf("valor de bit: %d\n", bit[contador]);
                         printf("valor de bit2: %d\n", bit_2[contador]);
 
@@ -44,6 +44,7 @@ void analyse_file(){
                         printf("-Result = %d-\n", result);
 
                         similaridade = (100 * result) / 32;
+                        similaridade = 100 - similaridade;
                         printf("Sim Hamming = %f%%\n", similaridade);
 
                         contador = contador + 1;
@@ -54,10 +55,10 @@ void analyse_file(){
 
                 i++;
                 printf("\n%d\n", i);
-                
-                tst1 = fread(bit, sizeof(int), BLOCO, arq );
-                tst2 = fread(bit_2, sizeof(int), BLOCO, arq2 );
-                
+
+                teste1 = fread(bit, sizeof(int), BLOCO, arq );
+                teste2 = fread(bit_2, sizeof(int), BLOCO, arq2 );
+
             }
 
     fclose(arq);
@@ -92,10 +93,3 @@ int readingFileError(FILE *arch1, FILE *arch2)
     }
     return retornar;
 }
-
-int main()
-{
-    analyse_file();
-    return 0;
-}
-
