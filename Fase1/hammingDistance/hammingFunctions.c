@@ -1,13 +1,13 @@
 #include "hammingFunctions.h"
 
 // Realiaza a analise
-void analyse_file()
+float analyse_file()
 {
-        int bit[BLOCO], bit_2[BLOCO], percentage[1000], teste1, teste2;
+        int bit[BLOCO], bit_2[BLOCO], teste1, teste2, result, contador = 0, i = 0;
         FILE *arq;
         FILE *arq2;
-        int result, contador = 0, i = 0;
-        float similaridade;
+        long int acumulador = 0;
+        float similaridade, media;
 
         // Faz leitura dos arquivos
         arq = fopen("./testes/Documento1.txt", "rb");
@@ -45,7 +45,10 @@ void analyse_file()
 
                         similaridade = (100 * result) / 32;
                         similaridade = 100 - similaridade;
+
                         printf("Sim Hamming = %f%%\n", similaridade);
+
+                        acumulador = acumulador + similaridade;
 
                         contador = contador + 1;
                     }
@@ -60,9 +63,11 @@ void analyse_file()
                 teste2 = fread(bit_2, sizeof(int), BLOCO, arq2 );
 
             }
+            media = media_of_similarity(acumulador, i);
 
     fclose(arq);
     fclose(arq2);
+    return media;
 }
 
 // Retorna o numero de bits DIFERENTES na amostra
@@ -92,4 +97,10 @@ int readingFileError(FILE *arch1, FILE *arch2)
         retornar = 0;
     }
     return retornar;
+}
+
+float media_of_similarity(int soma, int contador)
+{
+    media = soma / contador;
+    return media;
 }

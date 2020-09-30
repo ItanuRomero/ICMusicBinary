@@ -4,7 +4,10 @@
 
 int main()
 {
-    analyse_file();
+    int media;
+
+    media = analyse_file();
     return 0;
 }
+
 
