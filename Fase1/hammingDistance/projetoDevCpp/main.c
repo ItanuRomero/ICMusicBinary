@@ -8,7 +8,6 @@ int main(){
     media = analyse_file();
 
     save_data(media);
+    
     return 0;
 }
-
-
