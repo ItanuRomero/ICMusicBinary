@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "hammingFunctions.h"
 
 // Realiaza a analise
@@ -103,4 +104,15 @@ float media_of_similarity(int soma, int contador)
 {
     media = soma / contador;
     return media;
+}
+
+void save_data(float media)
+{
+    FILE *arq;
+
+    arq = fopen("./testes/arquivoDeAnalise.txt", "a");
+
+        fprintf(arq, "%d", media);
+
+    fclose(arq);
 }
