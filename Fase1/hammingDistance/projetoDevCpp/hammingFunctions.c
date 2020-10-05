@@ -2,73 +2,71 @@
 #include "hammingFunctions.h"
 
 // Realiaza a analise
-float analyse_file()
+float analyse_file(char arq_name1, char arq_name2)
 {
-        int bit[BLOCO], bit_2[BLOCO], teste1, teste2, result, contador = 0, i = 0;
-        FILE *arq;
-        FILE *arq2;
-        double acumulador = 0;
-        double similaridade, media;
+    FILE *arq;
+    FILE *arq2;
+    int bit[BLOCO], bit_2[BLOCO], teste1, teste2, result, contador = 0, i = 0, divisor = 0;
+    double similaridade, acumulador = 0;
+    float media;
 
-        // Faz leitura dos arquivos
-        arq = fopen("./testes/texto01.txt", "rb");
-        arq2 = fopen("./testes/texto02.txt", "rb");
+    // Faz leitura dos arquivos
+    arq = fopen(arq_name1, "rb");
+    arq2 = fopen(arq_name2, "rb");
 
-            // Verifica se houve erro na leitura
-            if (readingFileError(arq, arq2) == 1) {
-                printf("\nDetectamos um erro ao abrir os arquivos!!\nfavor verificar e tentar novamente\n\n");
-                return 1;
-            };
+    // Verifica se houve erro na leitura
+    if (readingFileError(arq, arq2) == 1) {
+        printf("\nDetectamos um erro ao abrir os arquivos!!\nfavor verificar e tentar novamente\n\n");
+        return 1;
+    };
 
-            teste1 = fread( bit, sizeof(int), BLOCO, arq );
-            teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
+        teste1 = fread( bit, sizeof(int), BLOCO, arq );
+        teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
 
-            printf("\n\n%d %d\n\n", teste1, teste2);
+        printf("\n\nvalor de teste1: %d valor de teste2: %d\n\n", teste1, teste2);
 
 
 
-            // Enquanto os arquivos ainda tem dados a serem lidos
-            while (teste1 == BLOCO && teste2 == BLOCO) {
+        // Enquanto os arquivos ainda tem dados a serem lidos
+        while (teste1 == BLOCO && teste2 == BLOCO) {
 
-            	    // Vai correr pelos valores de 0 a 100 dos vetores bit e bit_2
-                    while (contador <= BLOCO) {
+                // Vai correr pelos valores de 0 a 100 dos vetores bit e bit_2
+                while (contador <= BLOCO) {
 
-                        /*if ( bit[contador] == EOF || bit_2[contador] == EOF )
-                        {
-                            printf("valor nulo!\n");
-                        }*/
+                    printf("valor de bit: %d\n", bit[contador]);
+                    printf("valor de bit2: %d\n", bit_2[contador]);
 
-                        printf("valor de bit: %d\n", bit[contador]);
-                        printf("valor de bit2: %d\n", bit_2[contador]);
+                    result = hammingDistance(bit[contador], bit_2[contador]);
+                    printf("-Result = %d-\n", result);
 
-                        result = hammingDistance(bit[contador], bit_2[contador]);
-                        printf("-Result = %d-\n", result);
+                    similaridade = (100 * result) / 32;
+                    similaridade = 100 - similaridade;
 
-                        similaridade = (100 * result) / 32;
-                        similaridade = 100 - similaridade;
+                    // Para mostrar o valor double temos que usar %lf
+                    printf("Sim Hamming = %lf%%\n", similaridade);
 
-                        printf("Sim Hamming = %f%%\n", similaridade);
+                    acumulador = acumulador + similaridade;
 
-                        acumulador = acumulador + similaridade;
+                    contador = contador + 1;
+                }
 
-                        contador = contador + 1;
-                    }
+            divisor = contador + divisor
+            //retorna contador para 0 para que o while possa contar novamente
+            contador = 0;
 
-                //retorna contador para 0 para que o while possa contar novamente
-                contador = 0;
 
-                i++;
-                printf("\n%d\n", i);
+            i++;
+            printf("bloco de numero %d lido corretamente.\n", i);
 
-                teste1 = fread(bit, sizeof(int), BLOCO, arq );
-                teste2 = fread(bit_2, sizeof(int), BLOCO, arq2 );
+            teste1 = fread(bit, sizeof(int), BLOCO, arq );
+            teste2 = fread(bit_2, sizeof(int), BLOCO, arq2 );
 
-            }
-            media = acumulador / contador;
+        }
+    media = acumulador / divisor;
 
-    fclose(arq);
-    fclose(arq2);
-    return media;
+fclose(arq);
+fclose(arq2);
+return media;
 }
 
 // Retorna o numero de bits DIFERENTES na amostra
@@ -99,7 +97,7 @@ int readingFileError(FILE *arch1, FILE *arch2)
     }
     return retornar;
 }
-
+// Salva os dados para analise em um arquivo externo
 void save_data(float media)
 {
     FILE *arq;
@@ -109,4 +107,15 @@ void save_data(float media)
         fprintf(arq, "%f\n", media);
 
     fclose(arq);
+}
+
+char name_archive(int number)
+{
+    int number_archive = number, number_of_char = 30;
+    char name_for_analisis[number_of_char];
+    printf("Favor inserir o nome do arquivo %d\n com o maximo de %d caracteres! ", number_archive, number_of_char);
+    printf("(Digite 'padrao' para seguir com dados internos\n")
+    scanf("%s", &name_for_analisis);
+
+    return name_for_analisis;
 }

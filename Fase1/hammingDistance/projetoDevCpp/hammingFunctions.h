@@ -7,5 +7,6 @@
     int hammingDistance(int n1, int n2);
     int readingFileError(FILE *arch1, FILE *arch2);
     void save_data(float media);
+    char name_archive(int number);
 
 #endif // HAMMINGFUNCTIONS_H_INCLUDED
