@@ -54,7 +54,7 @@ float analyse_file()
         while (teste1 == BLOCO && teste2 == BLOCO) {
 
                 // Vai correr pelos valores de 0 a 100 dos vetores bit e bit_2
-                while (contador <= BLOCO) {
+                while (contador < BLOCO) {
 
                     printf("valor de bit: %d\n", bit[contador]);
                     printf("valor de bit2: %d\n", bit_2[contador]);
