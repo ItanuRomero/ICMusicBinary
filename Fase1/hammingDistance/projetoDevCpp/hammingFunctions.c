@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 #include "hammingFunctions.h"
 
 // Realiaza a analise
-float analyse_file(char arq_name1, char arq_name2)
+float analyse_file()
 {
     FILE *arq;
     FILE *arq2;
@@ -10,9 +11,31 @@ float analyse_file(char arq_name1, char arq_name2)
     double similaridade, acumulador = 0;
     float media;
 
+        // colocar os nomes
+        char name_1[QUANT_CHAR], name_2[QUANT_CHAR];
+        int cont;
+
+        for(cont = 1; cont <= 2; ++cont){
+            printf("Favor inserir o nome do arquivo %d com o maximo de %d caracteres! ", cont, QUANT_CHAR);
+            printf("(Digite 'padrao' para seguir com dados internos\n");
+            if (cont == 1){
+                scanf("%s", name_1);
+            } else {
+                scanf("%s", name_2);
+            }
+        }
+
+        // Valor padrao para testes
+        if (strcmp(name_1, "padrao") == 0) {
+            strcpy(name_1, "./testes/texto01.txt");
+        }
+        if (strcmp(name_2, "padrao") == 0) {
+            strcpy(name_2, "./testes/texto02.txt");
+        }
+
     // Faz leitura dos arquivos
-    arq = fopen(arq_name1, "rb");
-    arq2 = fopen(arq_name2, "rb");
+    arq = fopen(name_1, "rb");
+    arq2 = fopen(name_2, "rb");
 
     // Verifica se houve erro na leitura
     if (readingFileError(arq, arq2) == 1) {
@@ -50,7 +73,7 @@ float analyse_file(char arq_name1, char arq_name2)
                     contador = contador + 1;
                 }
 
-            divisor = contador + divisor
+            divisor = contador + divisor;
             //retorna contador para 0 para que o while possa contar novamente
             contador = 0;
 
@@ -107,15 +130,4 @@ void save_data(float media)
         fprintf(arq, "%f\n", media);
 
     fclose(arq);
-}
-
-char name_archive(int number)
-{
-    int number_archive = number, number_of_char = 30;
-    char name_for_analisis[number_of_char];
-    printf("Favor inserir o nome do arquivo %d\n com o maximo de %d caracteres! ", number_archive, number_of_char);
-    printf("(Digite 'padrao' para seguir com dados internos\n")
-    scanf("%s", &name_for_analisis);
-
-    return name_for_analisis;
 }
