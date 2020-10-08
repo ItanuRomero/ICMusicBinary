@@ -62,7 +62,7 @@ float analyse_file()
                     result = hammingDistance(bit[contador], bit_2[contador]);
                     printf("-Result = %d-\n", result);
 
-                    similaridade = (100 * result) / 32;
+                    similaridade = (100 * result) / QUANT_BIT;
                     similaridade = 100 - similaridade;
 
                     // Para mostrar o valor double temos que usar %lf

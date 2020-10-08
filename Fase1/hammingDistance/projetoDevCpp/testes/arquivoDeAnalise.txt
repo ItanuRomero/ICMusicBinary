@@ -1,7 +1,7 @@
--nan
-inf
-inf
 100.000000
-76.931534
-100.000000
-76.743423
+76.931534 // teste 02
+100.000000 // teste 01
+76.743423 // teste 03
+76.743332 // teste 04 copia do anterior com bloco 44100
+-1.#IND00 // interrompido
+88.479820 // teste 05
