@@ -7,7 +7,8 @@ float analyse_file()
 {
     FILE *arq;
     FILE *arq2;
-    int bit[BLOCO], bit_2[BLOCO], teste1, teste2, result, contador = 0, i = 0, divisor = 0;
+    long int bit[BLOCO], bit_2[BLOCO];
+    int teste1, teste2, result, contador = 0, i = 0, divisor = 0;
     double similaridade, acumulador = 0;
     float media;
 
@@ -43,8 +44,8 @@ float analyse_file()
         return 1;
     };
 
-        teste1 = fread( bit, sizeof(int), BLOCO, arq );
-        teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
+        teste1 = fread( bit, sizeof(long int), BLOCO, arq );
+        teste2 = fread( bit_2, sizeof(long int), BLOCO, arq2 );
 
         printf("\n\nvalor de teste1: %d valor de teste2: %d\n\n", teste1, teste2);
 
@@ -131,3 +132,26 @@ void save_data(float media)
 
     fclose(arq);
 }
+/*
+void save_information() 
+{
+	FILE *arq;
+	char linha[100];
+	int i = 0;
+
+    arq = fopen("./testes/arquivoDeAnalise.txt", "a");
+
+		printf("Escreva sobre esse teste: ");
+		
+		do {
+			linha[i] = getchar();
+			++i;
+			if (linha[i])
+		} while ( linha[i] != "\n" );
+		//adciona o caractere nulo
+		linha[i - 1] = "\0";
+		
+        fprintf(arq, "%s\n", linha);
+
+    fclose(arq);
+} */

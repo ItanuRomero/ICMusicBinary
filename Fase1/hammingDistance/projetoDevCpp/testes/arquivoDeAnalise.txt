@@ -3,5 +3,4 @@
 100.000000 // teste 01
 76.743423 // teste 03
 76.743332 // teste 04 copia do anterior com bloco 44100
--1.#IND00 // interrompido
-88.479820 // teste 05
+88.543968 // teste 05 -> rock and classical com long int

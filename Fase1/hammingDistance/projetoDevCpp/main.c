@@ -3,6 +3,8 @@
 
 int main(){
     float media;
+    
+	//save_information();
 
     media = analyse_file();
 
