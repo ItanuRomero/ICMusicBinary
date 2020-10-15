@@ -12,3 +12,15 @@ Essas diferencas sao minimas para a maioria dos usuarios.
 AnaliseDosFormatosSubjetivamente.pdf, figura 6, página 21.
 
 [**video**](https://www.youtube.com/watch?v=1EdL0eu6oGE)
+
+
+# Informações sobre o formato de arquivo MIDI
+Nome 	MIDI
+Nome completo 	Musical Instrument Digital Interface (MIDI)
+Extensão de arquivo 	.midi, .mid
+Tipo MIME 	audio/mid, audio/midi, audio/x-mid, audio/x-midi
+Desenvolvido por 	Unknown
+Tipo de formato 	
+Descrição 	Um arquivo MIDI não contém qualquer música, mas instruções sobre eventos musicais e objetos. O dispositivo interpreta os comandos no arquivo MIDI e reproduz os eventos de música-relacionado. O tamanho compacto destes arquivos levaram à sua utilização generalizada em computadores, toques para celular, de autoria web e cartões musicais.
+Detalhes técnicos 	
+Programas associados 	Awave Studio, Audacity, Winamp
