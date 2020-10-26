@@ -1,8 +1,7 @@
 soundfile
 resampy
+numpy
 vamp
 midiutil
 jams
-numpy
 scipy
-

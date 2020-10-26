@@ -7,7 +7,7 @@ float analyse_file()
 {
     FILE *arq;
     FILE *arq2;
-    long int bit[BLOCO], bit_2[BLOCO];
+    int bit[BLOCO], bit_2[BLOCO];
     int teste1, teste2, result, contador = 0, i = 0, divisor = 0;
     double similaridade, acumulador = 0;
     float media;
@@ -28,10 +28,10 @@ float analyse_file()
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/texto01.txt");
+            strcpy(name_1, "./testes/videogame7.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/texto02.txt");
+            strcpy(name_2, "./testes/videogame8.mid");
         }
 
     // Faz leitura dos arquivos
@@ -44,8 +44,8 @@ float analyse_file()
         return 1;
     };
 
-        teste1 = fread( bit, sizeof(long int), BLOCO, arq );
-        teste2 = fread( bit_2, sizeof(long int), BLOCO, arq2 );
+        teste1 = fread( bit, sizeof(int), BLOCO, arq );
+        teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
 
         printf("\n\nvalor de teste1: %d valor de teste2: %d\n\n", teste1, teste2);
 

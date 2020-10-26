@@ -1,9 +1,9 @@
 #ifndef HAMMINGFUNCTIONS_H_INCLUDED
 #define HAMMINGFUNCTIONS_H_INCLUDED
 
-    #define BLOCO 44100
+    #define BLOCO 1
     #define QUANT_CHAR 30
-    #define QUANT_BIT 64
+    #define QUANT_BIT 32
 
     float analyse_file();
     int hammingDistance(int n1, int n2);
