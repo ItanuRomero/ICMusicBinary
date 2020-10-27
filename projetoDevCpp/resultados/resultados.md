@@ -17,7 +17,7 @@ Musicas utilizadas:
 
 o teste realizado concluiu com 76.743423% de media final de similaridade.
 ![teste 03](./teste03.PNG)
-Musicas utilizadas:
+### Musicas utilizadas:
     - Meduza, Alok - Piece Of Your Heart (Alok Remix) ft. Goodboys
     - Meduza, Goodboys - Piece Of Your Heart (Visualizer) ft. Goodboys
 
@@ -25,7 +25,7 @@ Musicas utilizadas:
 
 O teste realizado concluiu com 76.743332% de media final de similaridade.
 ![teste 04](./teste04.PNG)
-Musicas utilizadas:
+### Musicas utilizadas:
     - Meduza, Alok - Piece Of Your Heart (Alok Remix) ft. Goodboys
     - Meduza, Goodboys - Piece Of Your Heart (Visualizer) ft. Goodboys
 
@@ -33,7 +33,7 @@ Musicas utilizadas:
 
 O teste realizado concluiu com 88.543968% de media final de similaridade.
 ![teste 05](./teste05.PNG)
-Musicas utilizadas:
+### Musicas utilizadas:
     - Rude_-_Cold_Inside
     - WhiteCat_-_Beautiful_Piano_-_full_version
 
