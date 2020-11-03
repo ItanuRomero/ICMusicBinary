@@ -1,12 +1,13 @@
-texto = open('/home/itanu/Área de Trabalho/com_imp.txt', 'r')
-texto_copia = open('/home/itanu/Área de Trabalho/teste.txt', 'r')
+arq1 = open('./musicas/teste1.mid', 'rb')
+arq2 = open('./musicas/teste2.mid', 'rb')
 contador_iguais = 0
-texto_1 = texto.read()
-texto_2 = texto_copia.read()
+arquivo1 = list()
+arquivo2 = list()
+for leitura in range(0, 100):
+    arquivo1.append(arq1.readline(1))
+    arquivo2.append(arq2.readline(1))
+
 for indice in range(0, 100):
-    if texto_1[indice] == texto_2[indice]:
+    if arquivo1[indice] == arquivo2[indice]:
         contador_iguais += 1
-print(f'Em uma amostra com 100 caracteres\n'
-      f'Possui um total de {contador_iguais} caracteres iguais')
-texto.close()
-texto_copia.close()
+print(contador_iguais)
