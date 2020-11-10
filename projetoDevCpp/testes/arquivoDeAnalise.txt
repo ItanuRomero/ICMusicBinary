@@ -16,3 +16,5 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 67.661797 // rap com classic
 100.000000 // mesma musica
 67.574982 // final fantasy 7 e 8
+72.384048 // musicas da banda 5ive
+72.384048
