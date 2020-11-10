@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144daab4-16a3-434a-a2a1-83c504b8a8c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" beforeDir="false" afterPath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_to_midi_melodia-master/audio_to_midi_melodia.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_to_midi_melodia-master/audio_to_midi_melodia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/IC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/IC.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.o" afterDir="false" />
@@ -33,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/audio_to_midi_melodia-master" />
@@ -81,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603480063714</updated>
       <workItem from="1604951440068" duration="1502000" />
+      <workItem from="1605017664411" duration="1031000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,0 @@
-soundfile
-resampy
-numpy
-vamp
-midiutil
-jams
-scipy

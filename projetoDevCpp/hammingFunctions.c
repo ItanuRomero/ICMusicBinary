@@ -28,10 +28,10 @@ float analyse_file()
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/teste1.mid");
+            strcpy(name_1, "./testes/rap.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/teste2.mid");
+            strcpy(name_2, "./testes/original.mid");
         }
 
     // Faz leitura dos arquivos
