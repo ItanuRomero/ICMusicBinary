@@ -23,3 +23,8 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 78.441864 // rude - so crazy
 77.253662 // rock - classical
 62.830551 // rap marvin - pieceOfYourHeart original
+69.173660 // jazz e piece of your heart remix
+66.806793 // classic - classical
+68.885674 // duas musicas do michael jackson
+68.518326 // duas musicas do genesis
+70.646515 // duas musicas do bad religion
