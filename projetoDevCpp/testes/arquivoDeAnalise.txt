@@ -28,3 +28,7 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 68.885674 // duas musicas do michael jackson
 68.518326 // duas musicas do genesis
 70.646515 // duas musicas do bad religion
+76.354126 // original e live piece of your heart
+75.365738 // remix com live
+78.383598 // glow com original poyr
+67.649940 // glow com classic
