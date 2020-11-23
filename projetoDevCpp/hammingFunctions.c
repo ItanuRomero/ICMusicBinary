@@ -107,7 +107,7 @@ int hammingDistance(int n1, int n2)
     return setBits;
 }
 
-// Verifica se um dos arquivos nao pode ser lido
+// Verifica se houve erro na abertura de arquivos
 int readingFileError(FILE *arch1, FILE *arch2)
 {
     int retornar;
