@@ -32,3 +32,8 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 75.365738 // remix com live
 78.383598 // glow com original poyr
 67.649940 // glow com classic
+76.772110 // rock com mozart
+76.987274 // piece of your heart original com mozart
+78.620018 // poyr original com rock (chop suey)
+87.084602 // japanese denim com chop suey
+61.273823 // japanese denim com mozart
