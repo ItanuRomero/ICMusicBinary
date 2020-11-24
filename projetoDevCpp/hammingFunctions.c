@@ -31,7 +31,7 @@ float analyse_file()
             strcpy(name_1, "./testes/daniel.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/mozart.mid");
+            strcpy(name_2, "./testes/ariana.mid");
         }
 
     // Faz leitura dos arquivos
