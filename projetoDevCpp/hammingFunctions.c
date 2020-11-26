@@ -12,7 +12,7 @@ float analyse_file()
     double similaridade, acumulador = 0;
     float media;
 
-        // colocar os nomes
+        // colocar os paths do arquivo a ser analizado
         char name_1[QUANT_CHAR], name_2[QUANT_CHAR];
         int cont;
 
@@ -28,10 +28,10 @@ float analyse_file()
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/daniel.mid");
+            strcpy(name_1, "./testes/seuJorge.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/ariana.mid");
+            strcpy(name_2, "./testes/daniel.mid");
         }
 
     // Faz leitura dos arquivos

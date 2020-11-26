@@ -47,3 +47,14 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 76.895630 // mozart e madonna
 76.976311 // mozart e lady gaga
 87.224121 // japanese denim e ariana
+77.831398 // seu jorge e tim Maia
+76.744774 // tempo perdido ao vivo e estúdio
+76.972717 // sozinho (caetano) azul (tim maia)
+77.165955 // sozinho (caetano) seu jorge
+76.553658 // tempo perdido estudio e seu jorge
+78.422356 // tempo perdido ao vivo e seu jorge
+85.669647 // tim maia e daniel caesar
+68.342377 // sozinho caetano e daniel caesar
+75.848923 // sozinho caetano e mozart
+76.541672 // azul tim maia e mozart
+87.198273 // seu jorge e daniel caesar
