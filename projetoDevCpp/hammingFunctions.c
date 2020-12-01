@@ -28,7 +28,7 @@ float analyse_file()
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/daniel.mid");
+            strcpy(name_1, "./testes/original.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
             strcpy(name_2, "./testes/rock.mid");

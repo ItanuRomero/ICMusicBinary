@@ -71,3 +71,19 @@ do tamanho do bloco, ou seja, melhor que os anteriores
 87.124420 // poyh original
 61.273823 // mozart
 87.084602 // daniel e rock
+78.383598 // poyh original com glow in the dark
+76.354126 // com poyh live
+78.671761 // com poyh remix
+77.885269 // azul tim maia
+78.572968 // legiao ao vivo
+76.585693 // legiao estudio
+78.365631 // seu jorge
+77.115944 // sozinho caetano
+77.744270 // 4 non blondes
+78.586815 // ariana
+78.502617 // lady gaga
+78.459251 // madonna
+87.124420 // daniel
+100.000000 // mesma musica
+76.987274 // mozart
+78.620018 // rock
