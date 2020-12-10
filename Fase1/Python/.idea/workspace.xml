@@ -4,11 +4,7 @@
     <list default="true" id="144daab4-16a3-434a-a2a1-83c504b8a8c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" beforeDir="false" afterPath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/IC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/IC.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/IC.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/IC.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/hammingFunctions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/testes/arquivoDeAnalise.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/testes/arquivoDeAnalise.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +80,7 @@
       <workItem from="1604951440068" duration="1502000" />
       <workItem from="1605017664411" duration="1031000" />
       <workItem from="1605205901778" duration="831000" />
+      <workItem from="1607458109677" duration="1320000" />
     </task>
     <servers />
   </component>
@@ -99,24 +96,24 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604956858067" />
-    <state width="623" height="150" key="GridCell.Tab.0.bottom" timestamp="1605214324174">
+    <state width="1322" height="154" key="GridCell.Tab.0.bottom" timestamp="1607482347522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="623" height="150" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605214324174" />
-    <state width="623" height="150" key="GridCell.Tab.0.center" timestamp="1605214324173">
+    <state width="1322" height="154" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607482347522" />
+    <state width="1322" height="154" key="GridCell.Tab.0.center" timestamp="1607482347521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="623" height="150" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605214324173" />
-    <state width="623" height="150" key="GridCell.Tab.0.left" timestamp="1605214324173">
+    <state width="1322" height="154" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607482347521" />
+    <state width="1322" height="154" key="GridCell.Tab.0.left" timestamp="1607482347520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="623" height="150" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605214324173" />
-    <state width="623" height="150" key="GridCell.Tab.0.right" timestamp="1605214324174">
+    <state width="1322" height="154" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607482347520" />
+    <state width="1322" height="154" key="GridCell.Tab.0.right" timestamp="1607482347521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="623" height="150" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605214324174" />
+    <state width="1322" height="154" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607482347521" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$ComparadorDeArquivosTexto.coverage" NAME="ComparadorDeArquivosTexto Coverage Results" MODIFIED="1605206082020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$ComparadorDeArquivosTexto.coverage" NAME="ComparadorDeArquivosTexto Coverage Results" MODIFIED="1607458297347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
