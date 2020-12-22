@@ -32,3 +32,12 @@ C - G - D - C - G - D - E.
 E - C - G - D - C - G - D.
 
 O que nos retornaria uma similaridade de 0%, mesmo sendo visível o padrão *C - G - D - C - G - D* em ambas melodias, como o sistema é linear, ele não consegue perceber que existem esses padrões, pois apenas lê informações diretas, nota a nota, ou como é o caso, bit a bit.
+
+
+# Testes realizados para tentar resolver o shift de dados
+
+Os testes foram realizados da seguinte forma:
+    
+    Primeiramente, foi feito a separação do arquivo em 3 partes, sendo elas início, meio e fim, e cada uma dessas partes foi comparada com as partes da segunda música.
+
+    Assim comparando o início da primeira com o início da segunda e assim por diante, era esperado poder resolver o shift de dados, porém os resultados não foram favoráveis.
