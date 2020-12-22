@@ -4,7 +4,30 @@
     <list default="true" id="144daab4-16a3-434a-a2a1-83c504b8a8c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" beforeDir="false" afterPath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FuncaoDistanciaDeHamming.py" beforeDir="false" afterPath="$PROJECT_DIR$/FuncaoDistanciaDeHamming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/blues.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/classic.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/jazz.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/rap.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/teste1.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/teste2.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/videogame7.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicas/videogame8.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/conclusoes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/japaneseDenim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/live.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/remix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/resultados.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/resultadosTestes.ods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/shiftDeDados.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/tempoPerdidoEstudio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste01.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste02.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste03.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste04.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste05.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +55,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/musicas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Familia\Documents\GitHub\ICMusicBinary\Fase1\Python\musicas" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ComparadorDeArquivosTexto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -81,6 +109,10 @@
       <workItem from="1605017664411" duration="1031000" />
       <workItem from="1605205901778" duration="831000" />
       <workItem from="1607458109677" duration="1320000" />
+      <workItem from="1608314942357" duration="4053000" />
+      <workItem from="1608388817412" duration="7350000" />
+      <workItem from="1608481233801" duration="7688000" />
+      <workItem from="1608560311407" duration="11075000" />
     </task>
     <servers />
   </component>
@@ -96,24 +128,24 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604956858067" />
-    <state width="1322" height="154" key="GridCell.Tab.0.bottom" timestamp="1607482347522">
+    <state width="1322" height="336" key="GridCell.Tab.0.bottom" timestamp="1608602615600">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="154" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607482347522" />
-    <state width="1322" height="154" key="GridCell.Tab.0.center" timestamp="1607482347521">
+    <state width="1322" height="336" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608602615600" />
+    <state width="1322" height="336" key="GridCell.Tab.0.center" timestamp="1608602615599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="154" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607482347521" />
-    <state width="1322" height="154" key="GridCell.Tab.0.left" timestamp="1607482347520">
+    <state width="1322" height="336" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608602615599" />
+    <state width="1322" height="336" key="GridCell.Tab.0.left" timestamp="1608602615599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="154" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607482347520" />
-    <state width="1322" height="154" key="GridCell.Tab.0.right" timestamp="1607482347521">
+    <state width="1322" height="336" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608602615599" />
+    <state width="1322" height="336" key="GridCell.Tab.0.right" timestamp="1608602615600">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="154" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607482347521" />
+    <state width="1322" height="336" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608602615600" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$ComparadorDeArquivosTexto.coverage" NAME="ComparadorDeArquivosTexto Coverage Results" MODIFIED="1607458297347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$ComparadorDeArquivosTexto.coverage" NAME="ComparadorDeArquivosTexto Coverage Results" MODIFIED="1608598532506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

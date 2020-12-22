@@ -1,10 +1,11 @@
 import numpy as np
+from sys import getsizeof
+
 
 def hamming_distance(a, b):
-r = (1 << np.arange(8))[:,None]
-return np.count_nonzero( (a & r) != (b & r) )
+    r = (1 << np.arange(8))[:, None]
+    return np.count_nonzero((a & r) != (b & r))
 
-from sys import getsizeof
 
 # iterar acima desta:
 def xor(a, b):
@@ -23,7 +24,6 @@ def xor(a, b):
 
 
 xor(5, 5)
-
 
 """
 Link de onde foi retirado:
