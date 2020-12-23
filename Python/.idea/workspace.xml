@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144daab4-16a3-434a-a2a1-83c504b8a8c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" beforeDir="false" afterPath="$PROJECT_DIR$/ComparadorDeArquivosTexto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncaoDistanciaDeHamming.py" beforeDir="false" afterPath="$PROJECT_DIR$/FuncaoDistanciaDeHamming.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/blues.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/classic.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/jazz.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/rap.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/teste1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/teste2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/videogame7.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/videogame8.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/conclusoes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/japaneseDenim.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/live.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/original.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/remix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/resultados.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/resultadosTestes.ods" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/shiftDeDados.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/tempoPerdidoEstudio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste01.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste02.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste03.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste04.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projetoDevCpp/resultados/teste05.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JupyterTrust" id="78188841-3671-4447-be99-6bddc22a2fcd" />
   <component name="ProjectId" id="1jI85dZx8iladinuNLv6xj4MLW6" />
@@ -55,7 +32,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/musicas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -113,6 +90,7 @@
       <workItem from="1608388817412" duration="7350000" />
       <workItem from="1608481233801" duration="7688000" />
       <workItem from="1608560311407" duration="11075000" />
+      <workItem from="1608658624965" duration="2632000" />
     </task>
     <servers />
   </component>

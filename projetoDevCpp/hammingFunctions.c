@@ -3,12 +3,12 @@
 #include "hammingFunctions.h"
 
 // Realiaza a analise
-float analyse_file()
+float analyse_file(int shift)
 {
     FILE *arq;
     FILE *arq2;
     int bit[BLOCO], bit_2[BLOCO];
-    int teste1, teste2, result, contador = 0, i = 0, divisor = 0;
+    int teste1, teste2, result, contador = 0, i = 0, divisor = 0, contador_espera = 0;
     double similaridade, acumulador = 0;
     float media;
 
@@ -28,10 +28,10 @@ float analyse_file()
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/original.mid");
+            strcpy(name_1, "./testes/live.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/rock.mid");
+            strcpy(name_2, "./testes/original.mid");
         }	
 
     // Faz leitura dos arquivos
@@ -43,6 +43,15 @@ float analyse_file()
         printf("\nDetectamos um erro ao abrir os arquivos!!\nfavor verificar e tentar novamente\n\n");
         return 1;
     };
+    
+    	// Inclusao de um shift caso necessario
+    	if (shift != 0) {
+			save_data(shift);	
+			while (contador_espera < shift) {
+				teste1 = fread( bit, sizeof(int), BLOCO, arq );
+				contador_espera = contador_espera + 1;
+			}
+		}
 
         teste1 = fread( bit, sizeof(int), BLOCO, arq );
         teste2 = fread( bit_2, sizeof(int), BLOCO, arq2 );
@@ -122,36 +131,14 @@ int readingFileError(FILE *arch1, FILE *arch2)
     return retornar;
 }
 // Salva os dados para analise em um arquivo externo
-void save_data(float media)
+void save_data(float dado)
 {
     FILE *arq;
 
     arq = fopen("./testes/arquivoDeAnalise.txt", "a");
 
-        fprintf(arq, "%f\n", media);
+        fprintf(arq, "%f\n", dado);
 
     fclose(arq);
 }
-/*
-void save_information() 
-{
-	FILE *arq;
-	char linha[100];
-	int i = 0;
 
-    arq = fopen("./testes/arquivoDeAnalise.txt", "a");
-
-		printf("Escreva sobre esse teste: ");
-		
-		do {
-			linha[i] = getchar();
-			++i;
-			if (linha[i])
-		} while ( linha[i] != "\n" );
-		//adciona o caractere nulo
-		linha[i - 1] = "\0";
-		
-        fprintf(arq, "%s\n", linha);
-
-    fclose(arq);
-} */

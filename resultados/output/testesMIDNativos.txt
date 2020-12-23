@@ -1,0 +1,24 @@
+testes com MID's originais
+
+71.993584 // teste com musica da banda 5ive e rap marvin gaye
+68.904114 // teste com rap e jazz
+72.286621 // banda 5ive com blues 
+68.831688 // jazz com blues
+67.661797 // rap com classic
+100.000000 // mesma musica
+67.574982 // final fantasy 7 e 8
+72.384048 // musicas da banda 5ive
+67.574982 // final fantasy 8 e 7
+
+nativos e testes mp3 transformados
+
+78.671761 // musica piece of your heart original e remix
+78.671761 // repetindo o teste com remix e original
+78.441864 // rude - so crazy
+77.253662 // rock - classical
+62.830551 // rap marvin - pieceOfYourHeart original
+69.173660 // jazz e piece of your heart remix
+66.806793 // classic - classical
+68.885674 // duas musicas do michael jackson
+68.518326 // duas musicas do genesis
+70.646515 // duas musicas do bad religion

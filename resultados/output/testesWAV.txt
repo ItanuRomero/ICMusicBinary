@@ -1,0 +1,12 @@
+testes com WAV
+100.000000
+76.931534 // teste 02
+100.000000 // teste 01
+76.743423 // teste 03 -- piece of your hearth
+76.743332 // teste 04 copia do anterior com bloco 44100
+88.543968 // teste 05 -> rock and classical com long int
+72.384048 // testes com arquivos midi bloco 1
+72.384048 // bloco 20
+72.384048 // bloco 32
+estes testes nao demonstraram inconsistencia em base
+do tamanho do bloco, ou seja, melhor que os anteriores

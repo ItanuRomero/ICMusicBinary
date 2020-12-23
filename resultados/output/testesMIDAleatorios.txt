@@ -1,0 +1,32 @@
+testes MID aleatorios
+
+76.354126 // original e live piece of your heart
+75.365738 // remix com live
+78.383598 // glow com original poyh
+67.649940 // glow com classic
+76.772110 // rock com mozart
+76.987274 // piece of your heart original com mozart
+78.620018 // poyh original com rock (chop suey)
+87.084602 // japanese denim com chop suey
+61.273823 // japanese denim com mozart
+78.660255 // musica lady gaga e madonna
+77.740013 // musica ariana e 4 non blondes
+78.586815 // poyh original e ariana
+78.675415 // lady gaga com ariana
+77.780373 // lady gaga e 4 non blondes
+76.128166 // mozart e 4 non blondes
+76.740234 // mozart e ariana
+76.895630 // mozart e madonna
+76.976311 // mozart e lady gaga
+87.224121 // japanese denim e ariana
+77.831398 // seu jorge e tim Maia
+76.744774 // tempo perdido ao vivo e estúdio
+76.972717 // sozinho (caetano) azul (tim maia)
+77.165955 // sozinho (caetano) seu jorge
+76.553658 // tempo perdido estudio e seu jorge
+78.422356 // tempo perdido ao vivo e seu jorge
+85.669647 // tim maia e daniel caesar
+68.342377 // sozinho caetano e daniel caesar
+75.848923 // sozinho caetano e mozart
+76.541672 // azul tim maia e mozart
+87.198273 // seu jorge e daniel caesar
