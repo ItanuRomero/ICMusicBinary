@@ -1,6 +1,6 @@
 # Testes realizados tentando contornar o Shift de dados.
 
-## 1 - um arquivo MID, fazer uma copia e comparar (tem que dar 100% vai em tudo)
+## 1 - um arquivo MID, fazer uma copia e comparar.
 
 o teste realizado concluiu com media final de 8.723% de similaridade.
 
