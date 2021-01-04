@@ -30,4 +30,4 @@ testes MID aleatorios
 68.342377 // sozinho caetano e daniel caesar
 75.848923 // sozinho caetano e mozart
 76.541672 // azul tim maia e mozart
-87.198273 // seu jorge e daniel caesa
+87.198273 // seu jorge e daniel caesar
