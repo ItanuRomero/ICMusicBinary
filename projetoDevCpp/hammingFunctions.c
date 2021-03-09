@@ -15,7 +15,7 @@ float analyse_file(int shift)
         // colocar os paths do arquivo a ser analizado
         char name_1[QUANT_CHAR], name_2[QUANT_CHAR];
         int cont;
-
+		/*
         for(cont = 1; cont <= 2; ++cont){
             printf("Favor inserir o nome do arquivo %d com o maximo de %d caracteres! ", cont, QUANT_CHAR);
             printf("(Digite 'padrao' para seguir com dados internos\n");
@@ -25,14 +25,18 @@ float analyse_file(int shift)
                 scanf("%s", name_2);
             }
         }
+        
 
         // Valor padrao para testes
         if (strcmp(name_1, "padrao") == 0) {
-            strcpy(name_1, "./testes/original.mp3");
+            strcpy(name_1, "./testes/original.mid");
         }
         if (strcmp(name_2, "padrao") == 0) {
-            strcpy(name_2, "./testes/putYour.mp3");
+            strcpy(name_2, "./testes/live.mid");
         }	
+        */
+        strcpy(name_1, "./testes/live.mid");
+        strcpy(name_2, "./testes/original.mid");
 
     // Faz leitura dos arquivos
     arq = fopen(name_1, "rb");
